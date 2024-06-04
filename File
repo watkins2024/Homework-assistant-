@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Homework Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #3a726a 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 5px;
+        }
+        .content {
+            padding: 20px;
+            background: #ffffff;
+            margin-top: 20px;
+        }
+        .task {
+            margin-bottom: 10px;
+        }
+        .task label {
+            margin-left: 10px;
+        }
+        .progress {
+            margin-top: 20px;
+        }
+        .progress div {
+            height: 25px;
+            background: #50b3a2;
+            color: #ffffff;
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Homework Tracker</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#weekly-schedule">Weekly Schedule</a></li>
+                    <li><a href="#progress-tracker">Progress Tracker</a></li>
+                    <li><a href="#reading-schedule">Reading Schedule</a></li>
+                    <li><a href="#submissions">Submissions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="weekly-schedule" class="content container">
+        <h2>Weekly Schedule</h2>
+        <div class="task">
+            <input type="checkbox" id="monday1">
+            <label for="monday1">Frameworks: Review literary devices (30 mins)</label>
+        </div>
+        <div class="task">
+            <input type="checkbox" id="monday2">
+            <label for="monday2">Responding to Texts: Read Chapter ___ (30 mins)</label>
+        </div>
+        <!-- Add similar blocks for other days -->
+    </section>
+
+    <section id="progress-tracker" class="content container">
+        <h2>Progress Tracker</h2>
+        <div class="progress">
+            <div style="width: 50%;">50% Completed</div>
+        </div>
+    </section>
+
+    <section id="reading-schedule" class="content container">
+        <h2>Reading Schedule</h2>
+        <p>Detailed reading assignments for "We Have Always Lived in the Castle"</p>
+        <p>Reflection questions for each chapter</p>
+    </section>
+
+    <section id="submissions" class="content container">
+        <h2>Argument Analysis Submissions</h2>
+        <p>Upload portal for submitting argument analysis paragraphs</p>
+        <p>History of submitted assignments</p>
+    </section>
+</body>
+</html>
